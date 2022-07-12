@@ -1,0 +1,16 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "Servidor de contagem de filmes por ano",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcus Vinicius Corrêa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0"
+  }
+}
