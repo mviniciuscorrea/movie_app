@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:movie_app/styles/style.dart';
 import 'package:movie_app/view/movies/movies.dart';
 
 void main() {
@@ -15,15 +16,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final style = Styles();
+
     return MaterialApp(
       title: 'Movies App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
         scaffoldBackgroundColor: const Color(0xfff6f6f6),
-        primaryColor: const Color(0xFF4e54c8),
+        primaryColor: style.colorPrimary(),
         brightness: Brightness.light,
-        hintColor: Colors.white70,
+        hintColor: style.colorTextDefault(),
       ),
       home: const Movies(),
     );
